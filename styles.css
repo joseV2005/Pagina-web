@@ -1,0 +1,388 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+header {
+    background-color: #4c73c2;
+    color: #fdfdfd;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #487097;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #487097;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #365ba8;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #487097;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #d1d9e3;
+}
+
+/* Estilos para la lista de canchas */
+#lista-canchas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cancha-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.cancha-card:hover {
+    transform: translateY(-5px);
+}
+
+.cancha-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cancha-card h3 {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.cancha-card p {
+    padding: 0 10px 10px;
+}
+
+.cancha-card button {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+/* Ventana modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+header {
+    background-color: #4c73c2;
+    color: #fdfdfd;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #487097;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #487097;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #365ba8;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #487097;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #d1d9e3;
+}
+
+/* Estilos para la lista de canchas */
+#lista-canchas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos */
+}
+
+.cancha-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.cancha-card:hover {
+    transform: translateY(-5px);
+}
+
+.cancha-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cancha-card h3 {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.cancha-card p {
+    padding: 0 10px 10px;
+}
+
+.cancha-card button {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+/* Ventana modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Queries para hacer responsive el diseño */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .cancha-card {
+        width: 100%; /* Las cartas ocupan el 100% del ancho en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, select {
+        padding: 8px;
+    }
+
+    .cancha-card img {
+        height: 150px; /* Imágenes más pequeñas en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
